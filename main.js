@@ -17,8 +17,6 @@ function getRandomIndex(array) {
 function letsCook() {
   console.log("when hidden:", makeDish)
   potImage.classList.add('hidden');
-  // makeDish.classList.remove('hidden')
-  // makeDish.classList.add('visible');
   if (sideDishRadio.checked) {
     recipeBox.innerText = 'You should make:'
     makeDish.innerText = sideDishes[getRandomIndex(sideDishes)];
@@ -36,16 +34,6 @@ function letsCook() {
 
 
 
-// function letsCook() {
-//   potImage.classList.add('hidden')
-//   if (sideDishRadio.checked) {
-//     recipeBox.innerText = sideDishes[getRandomIndex(sideDishes)]
-//   } else if (mainDishRadio.checked) {
-//     recipeBox.innerText = mainDish[getRandomIndex(mainDishes)]
-// } else {
-//     recipeBox.innerText = desserts[getRandomIndex(desserts)]
-// }
-// }
     
 
 
