@@ -4,7 +4,7 @@ var mainDishRadio = document.querySelector('.main-dish-radio');
 var dessertRadio = document.querySelector('.desserts-radio');
 var potImage = document.querySelector('img')
 // var recipeBox = document.querySelector('.recipe-box')
-var makeDish = document.querySelector('#hidden-text');
+var makeDish = document.querySelector('.hidden-text');
 var recipeBox = document.querySelector('.recipe');
 
 
@@ -20,13 +20,13 @@ function letsCook() {
   // makeDish.classList.remove('hidden')
   // makeDish.classList.add('visible');
   if (sideDishRadio.checked) {
-    recipeBox.innerText = 'You should make'
+    recipeBox.innerText = 'You should make:'
     makeDish.innerText = sideDishes[getRandomIndex(sideDishes)];
   } else if (dessertRadio.checked) {
-    recipeBox.innerHTML = 'You should make'
+    recipeBox.innerHTML = 'You should make:'
     makeDish.innerText = desserts[getRandomIndex(desserts)];
   } else {
-    recipeBox.innerHTML = 'You should make'
+    recipeBox.innerHTML = 'You should make:'
     makeDish.innerText = mainDishes[getRandomIndex(mainDishes)];
   }
 }
