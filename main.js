@@ -6,7 +6,7 @@ var potImage = document.querySelector('img')
 // var recipeBox = document.querySelector('.recipe-box')
 var makeDish = document.querySelector('.hidden-text');
 var recipeBox = document.querySelector('.recipe');
-
+var loading = document.querySelector('.loader')
 
 letsCookButton.addEventListener('click', letsCook)
 
@@ -17,6 +17,7 @@ function getRandomIndex(array) {
 function letsCook() {
   console.log("when hidden:", makeDish)
   potImage.classList.add('hidden');
+  loading.classList.remove('hidden')
   if (sideDishRadio.checked) {
     recipeBox.innerText = 'You should make:'
     makeDish.innerText = sideDishes[getRandomIndex(sideDishes)];
@@ -27,6 +28,10 @@ function letsCook() {
     recipeBox.innerHTML = 'You should make:'
     makeDish.innerText = mainDishes[getRandomIndex(mainDishes)];
   }
+}
+
+function loadingWave() {
+
 }
 
 
