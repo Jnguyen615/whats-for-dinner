@@ -1,56 +1,59 @@
 <!DOCTYPE html>
-  <head>
-    <meta name="viewport" contents="width=device-width">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>What's for Dinner???</title>
-  </head>
-  <body>
-    <nav>
-      <h1>What's for dinner?</h1>
-    </nav>
-    <main class="main-content"> 
-      <section class="input-box" id="'boxes">
-        <h2>
-          <strong>
-            What are you looking for?
-          </strong>
-          <span>*</span>
-        </h2>
-        <ul class= "input-list" style="list-style-type:none">
-          <li>
-            <input class="side-dish-radio" name="radio" type="radio">
-            <label for="side-dishes">Side Dishes</label>
-          </li>
-          <br>
-          <li>
-            <input class="main-dish-radio" name="radio" type="radio">
-            <label for="main-dishes">Main Dishes</label> 
-          </li>
-          <br>
-          <li>
-            <input class="desserts-radio" name="radio" type="radio">
-            <label for="desserts">Desserts</label>
-          </li>
-          <br>
-        </ul> 
-        <button class="button" id="lets-cook">LET'S COOK!</button> 
-      </section>   
-      <section class="recipe-box" id="boxes">
-        <div class="you-should-make">
-          <div class="recipe"></div>
-        </div>
-        <div class="recipe-name">
-          <div class="hidden-text"></div>
-        </div>
-        <div class="image">
-          <img src="./assets/cookpot.svg"/>
-        <div class="loader hidden"</div>  
+  <html>
+    <head>
+      <meta name="viewport" contents="width=device-width">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="./styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <title>What's for Dinner???</title>
+    </head>
+    <body>
+      <nav>
+        <h1>What's for dinner?</h1>
+      </nav>
+      <main class="main-content"> 
+        <section class="input-box" id="'boxes">
+          <h2>
+            <strong>
+              What are you looking for?
+            </strong>
+            <span>*</span>
+          </h2>
+          <ul class= "input-list" style="list-style-type:none">
+            <li>
+              <input class="side-dish-radio" name="radio" type="radio">
+              <label for="side-dishes">Side Dishes</label>
+            </li>
+            <br>
+            <li>
+              <input class="main-dish-radio" name="radio" type="radio">
+              <label for="main-dishes">Main Dishes</label> 
+            </li>
+            <br>
+            <li>
+              <input class="desserts-radio" name="radio" type="radio">
+              <label for="desserts">Desserts</label>
+            </li>
+            <br>
+          </ul> 
+          <button class="button" id="lets-cook">LET'S COOK!</button> 
+        </section>  
+        <section class="recipe-box">
+          <div class="you-should-make" id="make"></div>
+          <div class="suggested-meal" id="suggestion"></div>
+          <div class="image-container">
+            <img class="image" src="./assets/cookpot.svg"/>
+          </div>
+          <div class="loader-container hidden">
+            <div class="spinner">
+          </div>  
         </section>
-      <script type="text/javascript" src="data.js"></script>
-      <script type="text/javascript" src="main.js"></script>
-    </main>    
-  </body>
+        <script type="text/javascript" src="data.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+      </main>    
+    </body>
+  </html>
+
+
         
