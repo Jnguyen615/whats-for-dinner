@@ -1,39 +1,25 @@
+//Query Selectors 
 var letsCookButton = document.querySelector('.button');
 var sideDishRadio = document.querySelector('.side-dish-radio');
 var mainDishRadio = document.querySelector('.main-dish-radio');
 var dessertRadio = document.querySelector('.desserts-radio');
-var potImage = document.querySelector('img')
+var potImage = document.querySelector('img');
 var makeDish = document.querySelector('.suggested-meal');
 var suggestionBox = document.querySelector('.you-should-make');
-var loading = document.querySelector('.loader-container')
+var loading = document.querySelector('.loader-container');
 
-letsCookButton.addEventListener('click', function() {
-  suggestionBox.classList.remove('fade-in');
-  makeDish.classList.remove('fade-in');
-  suggestionBox.offsetWidth;
-  makeDish.offsetWidth; 
-  suggestionBox.classList.add('fade-in');
-  makeDish.classList.add('fade-in');
-});
-
+//Event Listeners
 letsCookButton.addEventListener('click', letsCook);
-// window.addEventListener('load,', function() {
-  // AutoRefresh(7000);
-// });
-
-letsCookButton.addEventListener('click', function(event) {
-    letsCook(event)
-});
 sideDishRadio.addEventListener('click', checkInput);
 mainDishRadio.addEventListener('click', checkInput);
 dessertRadio.addEventListener('click', checkInput);
 
-
+//Functions//
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
-function letsCook(event) {
+function letsCook() {
   loading.classList.remove('hidden');
   potImage.classList.add('hidden');
   suggestionBox.innerText = '';
@@ -49,16 +35,16 @@ function letsCook(event) {
       suggestionBox.innerHTML = 'You should make:'
       makeDish.innerText = mainDishes[getRandomIndex(mainDishes)];
     }
-    loading.classList.add('hidden')
-  }, 1000)
+    loading.classList.add('hidden');
+  }, 1000);
 }
 
-
-
-function AutoRefresh( t ) {
-  setTimeout("location.reload(true);", t);
+function checkInput() {
+  if (sideDishRadio.checked || mainDishRadio.checked || dessertRadio.checked) {
+   letsCookButton.removeAttribute('disabled'); 
+  }
 }
-
+  
 setTimeout(function() {
   var make = document.getElementById('make');
   make.style.opacity = 1;
@@ -68,14 +54,3 @@ setTimeout(function() {
   var suggestion = document.getElementById('suggestion');
   suggestion.style.opacity = 1;
 }, 2000);
-
-function checkInput() {
-  if (sideDishRadio.checked || mainDishRadio.checked || dessertRadio.checked) {
-   letsCookButton.removeAttribute('disabled') 
-  }
-}
-  
-    
-
-
-

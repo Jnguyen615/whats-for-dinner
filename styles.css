@@ -5,31 +5,45 @@ body {
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
 }
-
-nav {
-  background-color: #0fb9b1;
-  margin-top: -1%;
-  display: flex;
-  margin-left: -1%;
-  margin-right: -3%
-}
-
-h1 {
-  font-size: 25px;
-  margin-left: 3%
-}
-
-h2 {
-  font-size: 30px;
-  margin-left: 5%
-}
-
 .main-content {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   margin-top: 5%
+}
+
+nav {
+  background-color: #0fb9b1;
+  margin-top: -1%;
+  display: flex;
+  margin-left: -1%;
+  margin-right: -3%;
+}
+
+h1 {
+  font-size: 26px;
+  margin-left: 3%;
+}
+
+h2 {
+  margin-left: 16%;
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-left: 5%;
+}
+
+span {
+  color: #ee5253;
+}
+
+.input-list {
+  margin-bottom: 9%;
+  margin-left: 2%;
+  font-size: 20px;
 }
 
 .recipe-box, .input-box{
@@ -55,33 +69,18 @@ h2 {
 }
 
 #lets-cook:hover {
-  background:  #0fb9b1
+  background:  #0fb9b1;
 }
 
 #lets-cook:disabled{
-  cursor:not-allowed
-}
-/* #make, #suggestion {
-  opacity: 0;
-  transition: opacity 1s ease-in-out
-} */
-
-
-span {
-  color: #ee5253;
-}
-
-.input-list {
-  margin-bottom: 9%;
-  margin-left: 2%;
-  font-size: 20px
+  cursor:not-allowed;
 }
 
 .image-container {
   position: absolute;
   display: flex;
   margin-left: 20%;
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .image {
@@ -90,9 +89,6 @@ span {
   margin: auto;
 }
 
-.hidden {
-  display: none;
-}
 
 .you-should-make {
   font-style: italic;
@@ -120,21 +116,21 @@ span {
     display: flex;
     flex-direction: column;
   }
-
+  
   .recipe-box {
     margin-top: 20px;
   }
-
 }
-
-
-
+  
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% { opacity: 0; };
+  50% { opacity: 0; };
+  100% { opacity: 1; };
 }
 
+.hidden {
+  display: none;
+}
 
 .spinner {
   display: inline-block;
@@ -150,11 +146,9 @@ span {
   -webkit-appearance: none; 
 }
 
-
 @keyframes spin {
   to { -webkit-transform: rotate(360deg); }
 }
 @-webkit-keyframes spin {
   to { -webkit-transform: rotate(360deg); }
 }  
-
