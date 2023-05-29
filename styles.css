@@ -18,12 +18,12 @@ nav {
   margin-top: -1%;
   display: flex;
   margin-left: -1%;
-  margin-right: -3%;
+  margin-right: -3%
 }
 
 h1 {
   font-size: 26px;
-  margin-left: 3%;
+  margin-left: 3%
 }
 
 h2 {
@@ -38,12 +38,6 @@ h3 {
 
 span {
   color: #ee5253;
-}
-
-.input-list {
-  margin-bottom: 9%;
-  margin-left: 2%;
-  font-size: 20px;
 }
 
 .recipe-box, .input-box{
@@ -71,16 +65,22 @@ span {
 #lets-cook:hover {
   background:  #0fb9b1;
 }
+.input-list {
+  margin-bottom: 9%;
+  margin-left: 2%;
+  font-size: 20px
+}
 
 #lets-cook:disabled{
   cursor:not-allowed;
 }
 
+
 .image-container {
   position: absolute;
   display: flex;
   margin-left: 20%;
-  margin-top: 20px;
+  margin-top: 20px
 }
 
 .image {
@@ -88,7 +88,6 @@ span {
   height: 150px;
   margin: auto;
 }
-
 
 .you-should-make {
   font-style: italic;
@@ -123,9 +122,9 @@ span {
 }
   
 @keyframes fadeIn {
-  0% { opacity: 0; };
-  50% { opacity: 0; };
-  100% { opacity: 1; };
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .hidden {
