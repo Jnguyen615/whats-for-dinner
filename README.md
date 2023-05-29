@@ -13,7 +13,7 @@ To get this app running, you have to go to https://github.com/Jnguyen615/whats-f
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 
-<img width="1830" alt="Screenshot 2023-05-28 at 6 25 52 PM" src="https://user-images.githubusercontent.com/119434450/241599329-2f1b98ac-ab30-43e2-9c62-c2cf3b7bc485.png">
+<img width="839" alt="Screenshot 2023-05-28 at 7 48 06 PM" src="https://user-images.githubusercontent.com/119434450/241610790-6fbbb8d5-cb2c-4d9b-8924-a82351337399.png">
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
